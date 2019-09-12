@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Wilsonart Test Suite]">
+  <test thread-count="5" name="WilsonartUS(failed)" parallel="methods">
+    <classes>
+      <class name="tests.WilsonartUS">
+        <methods>
+          <include name="test1"/>
+          <include name="SetupApplication"/>
+          <include name="CloseApplication"/>
+        </methods>
+      </class> <!-- tests.WilsonartUS -->
+    </classes>
+  </test> <!-- WilsonartUS(failed) -->
+</suite> <!-- Failed suite [Wilsonart Test Suite] -->

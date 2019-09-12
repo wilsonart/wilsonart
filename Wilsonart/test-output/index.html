@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">3 suites, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-WA-US_test_suite">
+              <span class="suite-name border-failed">WA-US test suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-WA-US_test_suite">
+                    <span>C:\Users\vp00465875\workspace\Wilsonart\testng-xml\WA-US.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-WA-US_test_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-WA-US_test_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-WA-US_test_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-WA-US_test_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-WA-US_test_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-WA-US_test_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="hide-methods failed suite-WA-US_test_suite"> (hide)</a> <!-- hide-methods failed suite-WA-US_test_suite -->
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods failed suite-WA-US_test_suite"> (show)</a> <!-- show-methods failed suite-WA-US_test_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-WA-US_test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="validate_footerlinks">validate_footerlinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="validate_sidemenulinks">validate_sidemenulinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-WA-US_test_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="hide-methods passed suite-WA-US_test_suite"> (hide)</a> <!-- hide-methods passed suite-WA-US_test_suite -->
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods passed suite-WA-US_test_suite"> (show)</a> <!-- show-methods passed suite-WA-US_test_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-WA-US_test_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="signin(vp00465875@techmahindra.com, 8veNKat5#)">signin(vp00465875@techmahindra.com, 8veNKat5#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="validate_topmenulinks">validate_topmenulinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-WA-US_test_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-WA-Polyrey_test_suite">
+              <span class="suite-name border-failed">WA-Polyrey test suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-WA-Polyrey_test_suite">
+                    <span>C:\Users\vp00465875\workspace\Wilsonart\testng-xml\WA-Polyrey.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-WA-Polyrey_test_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-WA-Polyrey_test_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-WA-Polyrey_test_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-WA-Polyrey_test_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-WA-Polyrey_test_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-WA-Polyrey_test_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WA-Polyrey_test_suite" class="hide-methods failed suite-WA-Polyrey_test_suite"> (hide)</a> <!-- hide-methods failed suite-WA-Polyrey_test_suite -->
+                      <a href="#" panel-name="suite-WA-Polyrey_test_suite" class="show-methods failed suite-WA-Polyrey_test_suite"> (show)</a> <!-- show-methods failed suite-WA-Polyrey_test_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-WA-Polyrey_test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-Polyrey_test_suite" title="tests.Polyrey" hash-for-method="validate_footerlinks">validate_footerlinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-WA-Polyrey_test_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-WA-Polyrey_test_suite" class="hide-methods passed suite-WA-Polyrey_test_suite"> (hide)</a> <!-- hide-methods passed suite-WA-Polyrey_test_suite -->
+                      <a href="#" panel-name="suite-WA-Polyrey_test_suite" class="show-methods passed suite-WA-Polyrey_test_suite"> (show)</a> <!-- show-methods passed suite-WA-Polyrey_test_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-WA-Polyrey_test_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-Polyrey_test_suite" title="tests.Polyrey" hash-for-method="signin(na0084938@techmahindra.com, Polyrey1987)">signin(na0084938@techmahindra.com, Polyrey1987)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-Polyrey_test_suite" title="tests.Polyrey" hash-for-method="validate_topmenulinks">validate_topmenulinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-WA-Polyrey_test_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-b2c_sanity" class="panel b2c_sanity">
+        </div> <!-- panel b2c_sanity -->
+        <div panel-name="suite-WA-US_test_suite" class="panel WA-US_test_suite">
+          <div class="suite-WA-US_test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.US</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_footerlinks">
+                  </a> <!-- validate_footerlinks -->
+                  <span class="method-name">validate_footerlinks</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.US.validate_footerlinks(US.java:52)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_sidemenulinks">
+                  </a> <!-- validate_sidemenulinks -->
+                  <span class="method-name">validate_sidemenulinks</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.US.validate_sidemenulinks(US.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WA-US_test_suite-class-failed -->
+          <div class="suite-WA-US_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.US</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signin(vp00465875@techmahindra.com, 8veNKat5#)">
+                  </a> <!-- signin(vp00465875@techmahindra.com, 8veNKat5#) -->
+                  <span class="method-name">signin</span>
+                  <span class="parameters">(vp00465875@techmahindra.com, 8veNKat5#)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_topmenulinks">
+                  </a> <!-- validate_topmenulinks -->
+                  <span class="method-name">validate_topmenulinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WA-US_test_suite-class-passed -->
+        </div> <!-- panel WA-US_test_suite -->
+        <div panel-name="suite-WA-Polyrey_test_suite" class="panel WA-Polyrey_test_suite">
+          <div class="suite-WA-Polyrey_test_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.Polyrey</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_footerlinks">
+                  </a> <!-- validate_footerlinks -->
+                  <span class="method-name">validate_footerlinks</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at tests.Polyrey.validate_footerlinks(Polyrey.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WA-Polyrey_test_suite-class-failed -->
+          <div class="suite-WA-Polyrey_test_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.Polyrey</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signin(na0084938@techmahindra.com, Polyrey1987)">
+                  </a> <!-- signin(na0084938@techmahindra.com, Polyrey1987) -->
+                  <span class="method-name">signin</span>
+                  <span class="parameters">(na0084938@techmahindra.com, Polyrey1987)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_topmenulinks">
+                  </a> <!-- validate_topmenulinks -->
+                  <span class="method-name">validate_topmenulinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-WA-Polyrey_test_suite-class-passed -->
+        </div> <!-- panel WA-Polyrey_test_suite -->
+        <div panel-name="test-xml-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vp00465875\workspace\Wilsonart\testng-xml\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;b2c sanity&quot;&gt;
+  &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
+  &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;WA-US.xml&quot;/&gt;
+    &lt;suite-file path=&quot;WA-Polyrey.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- b2c sanity --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vp00465875\workspace\Wilsonart\testng-xml\WA-US.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-US test suite&quot;&gt;
+  &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
+  &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;US&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;passwd&quot; value=&quot;8veNKat5#&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;vp00465875@techmahindra.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.US&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- US --&gt;
+&lt;/suite&gt; &lt;!-- WA-US test suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\vp00465875\workspace\Wilsonart\testng-xml\WA-Polyrey.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-Polyrey test suite&quot;&gt;
+  &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
+  &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Polyrey&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;passwd&quot; value=&quot;Polyrey1987&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;na0084938@techmahindra.com&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.Polyrey&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Polyrey --&gt;
+&lt;/suite&gt; &lt;!-- WA-Polyrey test suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for b2c sanity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for WA-US test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">US (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for WA-Polyrey test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Polyrey (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for b2c sanity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for WA-US test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for WA-Polyrey test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for b2c sanity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_b2c_sanity');
+function tableData_b2c_sanity() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['b2c_sanity']= { tableData: data, tableDiv: 'times-div-b2c_sanity'}
+return data;
+}
+              </script>
+              <div id="times-div-b2c_sanity">
+              </div> <!-- times-div-b2c_sanity -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for WA-US test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_WA-US_test_suite');
+function tableData_WA-US_test_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'signin')
+data.setCell(0, 2, 'tests.US')
+data.setCell(0, 3, 32543);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validate_topmenulinks')
+data.setCell(1, 2, 'tests.US')
+data.setCell(1, 3, 17);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validate_sidemenulinks')
+data.setCell(2, 2, 'tests.US')
+data.setCell(2, 3, 16);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validate_footerlinks')
+data.setCell(3, 2, 'tests.US')
+data.setCell(3, 3, 16);
+window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <div id="times-div-WA-US_test_suite">
+              </div> <!-- times-div-WA-US_test_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for WA-Polyrey test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_WA-Polyrey_test_suite');
+function tableData_WA-Polyrey_test_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'signin')
+data.setCell(0, 2, 'tests.Polyrey')
+data.setCell(0, 3, 40020);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validate_footerlinks')
+data.setCell(1, 2, 'tests.Polyrey')
+data.setCell(1, 3, 4);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validate_topmenulinks')
+data.setCell(2, 2, 'tests.Polyrey')
+data.setCell(2, 3, 3);
+window.suiteTableData['WA-Polyrey_test_suite']= { tableData: data, tableDiv: 'times-div-WA-Polyrey_test_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-WA-Polyrey_test_suite">
+              </div> <!-- times-div-WA-Polyrey_test_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for b2c sanity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for WA-US test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for WA-Polyrey test suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-b2c_sanity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-WA-US_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.US</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetupApplication(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signin(vp00465875@techmahindra.com, 8veNKat5#)</span>
+                <span class="method-start">15276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_sidemenulinks</span>
+                <span class="method-start">15276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_footerlinks</span>
+                <span class="method-start">15276 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_topmenulinks</span>
+                <span class="method-start">15276 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseApplication</span>
+                <span class="method-start">47819 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-WA-Polyrey_test_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.Polyrey</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">SetupApplication(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signin(na0084938@techmahindra.com, Polyrey1987)</span>
+                <span class="method-start">21104 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_topmenulinks</span>
+                <span class="method-start">21110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_footerlinks</span>
+                <span class="method-start">21113 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseApplication</span>
+                <span class="method-start">61125 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "WA-Polyrey test suite" parallel="false">
+   <test name="Polyrey" thread-count="5" parallel="methods" >
+   <parameter name="username" value="na0084938@techmahindra.com" />
+   <parameter name="passwd" value="Polyrey1987" />
+        <classes>
+            <class name="tests.Polyrey"/>
+        </classes>
+    </test> <!-- First Test -->
+</suite>
