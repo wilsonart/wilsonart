@@ -26,8 +26,8 @@ public class BaseClass {
   public void SetupApplication(String browser) {
 	
 	  Reporter.log("=====Browser Session Started=====", true);
-	  
-	  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/workspace/Wilsonart/Driver/chromedriver.exe");
+	  Reporter.log("browser is "+browser);
+	  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
 	  driver=new ChromeDriver();
 	  
 	 /* System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/workspace/Wilsonart/Driver/geckodriver.exe");
@@ -38,9 +38,11 @@ public class BaseClass {
 	  /*System.setProperty("webdriver.edge.driver","C:/Users/vp00465875/workspace/Wilsonart/Driver/MicrosoftWebDriver.exe");
 	  driver = new EdgeDriver();*/
 	  
-	  System.out.println("browser--"+browser);
+	  //System.out.println("browser--"+browser);
 	 
-/*	  switch(browser)
+	
+
+	  /*	  switch(browser)
 	  {
 		  case "chrome":
 		  {
