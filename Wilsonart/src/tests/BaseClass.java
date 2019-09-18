@@ -63,7 +63,7 @@ public class BaseClass {
   public void CloseApplication() {
 	  
 	  driver.quit();
-	  Reporter.log("======Browser Session End=======", true);
+	  Reporter.log("======Browser Session Ended=======", true);
 	    
   }
 
