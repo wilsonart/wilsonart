@@ -28,38 +28,28 @@ public class BaseClass {
 	  Reporter.log("=====Browser Session Started=====", true);
 	  Reporter.log("browser is "+browser);
 	  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
-	  driver=new ChromeDriver();
-	  
-	 /* System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/workspace/Wilsonart/Driver/geckodriver.exe");
-	  //DesiredCapabilities dc = DesiredCapabilities.firefox();
-	  //dc.setCapability("marionette", true);
-	  driver=new FirefoxDriver();*/
-	  
-	  /*System.setProperty("webdriver.edge.driver","C:/Users/vp00465875/workspace/Wilsonart/Driver/MicrosoftWebDriver.exe");
-	  driver = new EdgeDriver();*/
-	  
-	  //System.out.println("browser--"+browser);
-	 
-	
-
-	  /*	  switch(browser)
-	  {
+      driver=new ChromeDriver();
+	  System.out.println("browser--"+browser);
+	   
+	  /*switch(browser)
+	     {
 		  case "chrome":
 		  {
-			  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/workspace/Wilsonart/Driver/chromedriver.exe");
-			  driver=new ChromeDriver(); 
+			  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
+	          driver=new ChromeDriver();
 			  System.out.println("browser--"+browser);
 		  }
 		  
 		  case "firefox":
 		  {
-			  System.setProperty("webdriver.firefox.marionette","C:/Users/vp00465875/workspace/Wilsonart/Driver/geckodriver.exe");
-			  driver=new FirefoxDriver();
+			 System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/geckodriver.exe");
+	         driver=new FirefoxDriver();
 		  }
 		  
 		  case "ie":
 		  {
-			  
+			  System.setProperty("webdriver.edge.driver","C:/Users/vp00465875/workspace/Wilsonart/Driver/MicrosoftWebDriver.exe");
+			  driver = new EdgeDriver();
 		  }
 		  
 		  default:
