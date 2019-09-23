@@ -11,7 +11,7 @@
       <![CDATA[=====Application has Started======]]>
     </line>
     <line>
-      <![CDATA[======Browser Session End=======]]>
+      <![CDATA[======Browser Session Ended=======]]>
     </line>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
@@ -23,19 +23,19 @@
       <![CDATA[=====Application has Started======]]>
     </line>
     <line>
-      <![CDATA[======Browser Session End=======]]>
+      <![CDATA[======Browser Session Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-09-18T09:44:23Z" finished-at="2019-09-18T09:44:23Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-09-20T13:38:34Z" finished-at="2019-09-20T13:38:34Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="52098" started-at="2019-09-18T09:42:34Z" finished-at="2019-09-18T09:43:26Z">
+  <suite name="WA-US test suite" duration-ms="62183" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:37:37Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="52098" started-at="2019-09-18T09:42:34Z" finished-at="2019-09-18T09:43:26Z">
+    <test name="US" duration-ms="62183" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:37:37Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="SetupApplication" is-config="true" duration-ms="16758" started-at="2019-09-18T09:42:34Z" finished-at="2019-09-18T09:42:51Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="SetupApplication" is-config="true" duration-ms="15955" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:36:51Z">
           <params>
             <param index="0">
               <value>
@@ -55,23 +55,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="signin" duration-ms="34475" started-at="2019-09-18T09:42:51Z" finished-at="2019-09-18T09:43:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vp00465875@techmahindra.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8veNKat5#]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_topmenulinks" duration-ms="8" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signin -->
-        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_footerlinks" duration-ms="7" started-at="2019-09-18T09:42:51Z" finished-at="2019-09-18T09:42:51Z">
+        </test-method> <!-- validate_topmenulinks -->
+        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_footerlinks" duration-ms="10" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -102,7 +90,23 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_footerlinks -->
-        <test-method status="FAIL" signature="validate_sidemenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_sidemenulinks" duration-ms="7" started-at="2019-09-18T09:42:51Z" finished-at="2019-09-18T09:42:51Z">
+        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="signin" duration-ms="45267" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:37:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vp00465875@techmahindra.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8veNKat5#]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method status="FAIL" signature="validate_sidemenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_sidemenulinks" duration-ms="7" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -133,26 +137,22 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_sidemenulinks -->
-        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_topmenulinks" duration-ms="7" started-at="2019-09-18T09:42:51Z" finished-at="2019-09-18T09:42:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_topmenulinks -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@1e7c7811]" name="CloseApplication" is-config="true" duration-ms="847" started-at="2019-09-18T09:43:26Z" finished-at="2019-09-18T09:43:26Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@1e7c7811]" name="CloseApplication" is-config="true" duration-ms="943" started-at="2019-09-20T13:37:36Z" finished-at="2019-09-20T13:37:37Z">
           <reporter-output>
             <line>
-              <![CDATA[======Browser Session End=======]]>
+              <![CDATA[======Browser Session Ended=======]]>
             </line>
           </reporter-output>
         </test-method> <!-- CloseApplication -->
       </class> <!-- tests.US -->
     </test> <!-- US -->
   </suite> <!-- WA-US test suite -->
-  <suite name="WA-Polyrey test suite" duration-ms="56027" started-at="2019-09-18T09:43:26Z" finished-at="2019-09-18T09:44:22Z">
+  <suite name="WA-Polyrey test suite" duration-ms="56503" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:38:33Z">
     <groups>
     </groups>
-    <test name="Polyrey" duration-ms="56027" started-at="2019-09-18T09:43:26Z" finished-at="2019-09-18T09:44:22Z">
+    <test name="Polyrey" duration-ms="56503" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:38:33Z">
       <class name="tests.Polyrey">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="SetupApplication" is-config="true" duration-ms="24178" started-at="2019-09-18T09:43:26Z" finished-at="2019-09-18T09:43:51Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="SetupApplication" is-config="true" duration-ms="21693" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:37:59Z">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="signin" duration-ms="30983" started-at="2019-09-18T09:43:51Z" finished-at="2019-09-18T09:44:22Z">
+        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="signin" duration-ms="33820" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:38:33Z">
           <params>
             <param index="0">
               <value>
@@ -188,11 +188,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signin -->
-        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_topmenulinks" duration-ms="2" started-at="2019-09-18T09:43:51Z" finished-at="2019-09-18T09:43:51Z">
+        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_topmenulinks" duration-ms="4" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:37:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_topmenulinks -->
-        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_footerlinks" duration-ms="1" started-at="2019-09-18T09:43:51Z" finished-at="2019-09-18T09:43:51Z">
+        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_footerlinks" duration-ms="1" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:37:59Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -223,10 +223,10 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_footerlinks -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.Polyrey@74a10858]" name="CloseApplication" is-config="true" duration-ms="862" started-at="2019-09-18T09:44:22Z" finished-at="2019-09-18T09:44:22Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.Polyrey@74a10858]" name="CloseApplication" is-config="true" duration-ms="985" started-at="2019-09-20T13:38:33Z" finished-at="2019-09-20T13:38:33Z">
           <reporter-output>
             <line>
-              <![CDATA[======Browser Session End=======]]>
+              <![CDATA[======Browser Session Ended=======]]>
             </line>
           </reporter-output>
         </test-method> <!-- CloseApplication -->
