@@ -31,7 +31,7 @@ public class US extends BaseClass {
 	  @Test
 	  public void signin(String uname, String pwd) throws Throwable {
 			  hp = new HomePage(driver);
-			  Thread.sleep(7000);
+			  Thread.sleep(10000);
 			  System.out.println("username"+uname);
 			  System.out.println("password"+pwd);
 			  hp.Clickonlink();

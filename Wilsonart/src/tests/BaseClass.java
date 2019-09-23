@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -31,18 +32,18 @@ public class BaseClass {
 	  if(browser.equals("chrome"))
 	  {
 		  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
-	      driver=new ChromeDriver();
+	      driver = new ChromeDriver();
 		  System.out.println("browser--"+browser);
 	  }
 	  else if (browser.equals("firefox"))
 	  {
 		  System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/geckodriver.exe");
-	      driver=new FirefoxDriver();
+	      driver = new FirefoxDriver();
 	  }
 	  else if (browser.equals("ie"))
 	  {
-		  System.setProperty("webdriver.edge.driver","C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/MicrosoftWebDriver.exe");
-		  driver = new EdgeDriver();
+		  System.setProperty("webdriver.ie.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/IEDriverServer.exe");
+		  driver = new InternetExplorerDriver();
 	  }
 	  
 	  	  

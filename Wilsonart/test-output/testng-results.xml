@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="7" passed="4">
+<testng-results skipped="0" failed="5" ignored="0" total="7" passed="2">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[browser is chrome]]>
+      <![CDATA[browser is ie]]>
     </line>
     <line>
       <![CDATA[=====Application has Started======]]>
@@ -17,7 +17,7 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[browser is chrome]]>
+      <![CDATA[browser is ie]]>
     </line>
     <line>
       <![CDATA[=====Application has Started======]]>
@@ -26,20 +26,20 @@
       <![CDATA[======Browser Session Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-09-20T13:38:34Z" finished-at="2019-09-20T13:38:34Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-09-23T08:54:34Z" finished-at="2019-09-23T08:54:34Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="62183" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:37:37Z">
+  <suite name="WA-US test suite" duration-ms="12967" started-at="2019-09-23T08:54:13Z" finished-at="2019-09-23T08:54:26Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="62183" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:37:37Z">
+    <test name="US" duration-ms="12967" started-at="2019-09-23T08:54:13Z" finished-at="2019-09-23T08:54:26Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="SetupApplication" is-config="true" duration-ms="15955" started-at="2019-09-20T13:36:35Z" finished-at="2019-09-20T13:36:51Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="SetupApplication" is-config="true" duration-ms="2306" started-at="2019-09-23T08:54:13Z" finished-at="2019-09-23T08:54:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[ie]]>
               </value>
             </param>
           </params>
@@ -48,18 +48,14 @@
               <![CDATA[=====Browser Session Started=====]]>
             </line>
             <line>
-              <![CDATA[browser is chrome]]>
+              <![CDATA[browser is ie]]>
             </line>
             <line>
               <![CDATA[=====Application has Started======]]>
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_topmenulinks" duration-ms="8" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_topmenulinks -->
-        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_footerlinks" duration-ms="10" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
+        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_footerlinks" duration-ms="7" started-at="2019-09-23T08:54:16Z" finished-at="2019-09-23T08:54:16Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -90,7 +86,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_footerlinks -->
-        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="signin" duration-ms="45267" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:37:36Z">
+        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_topmenulinks" duration-ms="7" started-at="2019-09-23T08:54:16Z" finished-at="2019-09-23T08:54:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_topmenulinks -->
+        <test-method status="FAIL" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.US@1e7c7811]" name="signin" duration-ms="10106" started-at="2019-09-23T08:54:16Z" finished-at="2019-09-23T08:54:26Z">
           <params>
             <param index="0">
               <value>
@@ -103,10 +103,63 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to find element on closed window
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:25490/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, javascriptEnabled=true, platformName=XP, setWindowRect=true, platform=XP}]
+Session ID: 3bafb559-c60b-4b7c-9a39-4f9e58599109
+*** Element info: {Using=xpath, value=//*[@title='Sign-in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:25490/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, javascriptEnabled=true, platformName=XP, setWindowRect=true, platform=XP}]
+Session ID: 3bafb559-c60b-4b7c-9a39-4f9e58599109
+*** Element info: {Using=xpath, value=//*[@title='Sign-in']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at pages.HomePage.Clickonlink(HomePage.java:28)
+at tests.US.signin(US.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signin -->
-        <test-method status="FAIL" signature="validate_sidemenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_sidemenulinks" duration-ms="7" started-at="2019-09-20T13:36:51Z" finished-at="2019-09-20T13:36:51Z">
+        <test-method status="FAIL" signature="validate_sidemenulinks()[pri:0, instance:tests.US@1e7c7811]" name="validate_sidemenulinks" duration-ms="8" started-at="2019-09-23T08:54:16Z" finished-at="2019-09-23T08:54:16Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -137,7 +190,7 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_sidemenulinks -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@1e7c7811]" name="CloseApplication" is-config="true" duration-ms="943" started-at="2019-09-20T13:37:36Z" finished-at="2019-09-20T13:37:37Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@1e7c7811]" name="CloseApplication" is-config="true" duration-ms="533" started-at="2019-09-23T08:54:26Z" finished-at="2019-09-23T08:54:26Z">
           <reporter-output>
             <line>
               <![CDATA[======Browser Session Ended=======]]>
@@ -147,16 +200,16 @@ at java.lang.Thread.run(Unknown Source)
       </class> <!-- tests.US -->
     </test> <!-- US -->
   </suite> <!-- WA-US test suite -->
-  <suite name="WA-Polyrey test suite" duration-ms="56503" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:38:33Z">
+  <suite name="WA-Polyrey test suite" duration-ms="7167" started-at="2019-09-23T08:54:26Z" finished-at="2019-09-23T08:54:33Z">
     <groups>
     </groups>
-    <test name="Polyrey" duration-ms="56503" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:38:33Z">
+    <test name="Polyrey" duration-ms="7167" started-at="2019-09-23T08:54:26Z" finished-at="2019-09-23T08:54:33Z">
       <class name="tests.Polyrey">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="SetupApplication" is-config="true" duration-ms="21693" started-at="2019-09-20T13:37:37Z" finished-at="2019-09-20T13:37:59Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="SetupApplication" is-config="true" duration-ms="1591" started-at="2019-09-23T08:54:26Z" finished-at="2019-09-23T08:54:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[ie]]>
               </value>
             </param>
           </params>
@@ -165,14 +218,14 @@ at java.lang.Thread.run(Unknown Source)
               <![CDATA[=====Browser Session Started=====]]>
             </line>
             <line>
-              <![CDATA[browser is chrome]]>
+              <![CDATA[browser is ie]]>
             </line>
             <line>
               <![CDATA[=====Application has Started======]]>
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="PASS" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="signin" duration-ms="33820" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:38:33Z">
+        <test-method status="FAIL" signature="signin(java.lang.String, java.lang.String)[pri:0, instance:tests.Polyrey@74a10858]" name="signin" duration-ms="5025" started-at="2019-09-23T08:54:28Z" finished-at="2019-09-23T08:54:33Z">
           <params>
             <param index="0">
               <value>
@@ -185,14 +238,63 @@ at java.lang.Thread.run(Unknown Source)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Unable to find element on closed window
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12282/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, javascriptEnabled=true, platformName=XP, setWindowRect=true, platform=XP}]
+Session ID: 355ad00e-f882-4930-b1fc-14119dcb4b63
+*** Element info: {Using=xpath, value=//*[@title='Sign-in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to find element on closed window
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities [{acceptInsecureCerts=false, browserVersion=11, se:ieOptions={nativeEvents=true, browserAttachTimeout=0, ie.ensureCleanSession=false, elementScrollBehavior=0, enablePersistentHover=true, ie.browserCommandLineSwitches=, ie.forceCreateProcessApi=false, requireWindowFocus=false, initialBrowserUrl=http://localhost:12282/, ignoreZoomSetting=false, ie.fileUploadDialogTimeout=3000, ignoreProtectedModeSettings=false}, browserName=internet explorer, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss, javascriptEnabled=true, platformName=XP, setWindowRect=true, platform=XP}]
+Session ID: 355ad00e-f882-4930-b1fc-14119dcb4b63
+*** Element info: {Using=xpath, value=//*[@title='Sign-in']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at pages.HomePage.Clickonlink(HomePage.java:28)
+at tests.Polyrey.signin(Polyrey.java:38)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signin -->
-        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_topmenulinks" duration-ms="4" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:37:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_topmenulinks -->
-        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_footerlinks" duration-ms="1" started-at="2019-09-20T13:37:59Z" finished-at="2019-09-20T13:37:59Z">
+        <test-method status="FAIL" signature="validate_footerlinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_footerlinks" duration-ms="2" started-at="2019-09-23T08:54:28Z" finished-at="2019-09-23T08:54:28Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -223,7 +325,11 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_footerlinks -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.Polyrey@74a10858]" name="CloseApplication" is-config="true" duration-ms="985" started-at="2019-09-20T13:38:33Z" finished-at="2019-09-20T13:38:33Z">
+        <test-method status="PASS" signature="validate_topmenulinks()[pri:0, instance:tests.Polyrey@74a10858]" name="validate_topmenulinks" duration-ms="2" started-at="2019-09-23T08:54:28Z" finished-at="2019-09-23T08:54:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_topmenulinks -->
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.Polyrey@74a10858]" name="CloseApplication" is-config="true" duration-ms="543" started-at="2019-09-23T08:54:33Z" finished-at="2019-09-23T08:54:33Z">
           <reporter-output>
             <line>
               <![CDATA[======Browser Session Ended=======]]>
