@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [WA-Polyrey test suite]">
   <parameter name="wilsonart" value="wilsonart"/>
   <parameter name="polyrey" value="polyrey"/>
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="ie"/>
   <test thread-count="5" name="Polyrey(failed)" parallel="methods">
     <parameter name="passwd" value="Polyrey1987"/>
     <parameter name="username" value="na0084938@techmahindra.com"/>
     <classes>
       <class name="tests.Polyrey">
         <methods>
+          <include name="signin" invocation-numbers="0"/>
           <include name="SetupApplication"/>
           <include name="validate_footerlinks"/>
           <include name="CloseApplication"/>
