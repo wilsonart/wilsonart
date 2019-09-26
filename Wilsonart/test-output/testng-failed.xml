@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [WA-Polyrey test suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WA-US test suite]">
   <parameter name="wilsonart" value="wilsonart"/>
   <parameter name="polyrey" value="polyrey"/>
-  <parameter name="browser" value="ie"/>
-  <test thread-count="5" name="Polyrey(failed)" parallel="methods">
-    <parameter name="passwd" value="Polyrey1987"/>
-    <parameter name="username" value="na0084938@techmahindra.com"/>
+  <parameter name="browser" value="mobile"/>
+  <test thread-count="5" name="US(failed)" parallel="methods">
+    <parameter name="passwd" value="8veNKat5#"/>
+    <parameter name="username" value="vp00465875@techmahindra.com"/>
     <classes>
-      <class name="tests.Polyrey">
+      <class name="tests.US">
         <methods>
-          <include name="signin" invocation-numbers="0"/>
-          <include name="SetupApplication"/>
           <include name="validate_footerlinks"/>
+          <include name="validate_sidemenulinks"/>
+          <include name="SetupApplication"/>
           <include name="CloseApplication"/>
         </methods>
-      </class> <!-- tests.Polyrey -->
+      </class> <!-- tests.US -->
     </classes>
-  </test> <!-- Polyrey(failed) -->
-</suite> <!-- Failed suite [WA-Polyrey test suite] -->
+  </test> <!-- US(failed) -->
+</suite> <!-- Failed suite [WA-US test suite] -->

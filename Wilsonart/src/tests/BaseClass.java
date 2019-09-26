@@ -4,8 +4,13 @@ import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -38,14 +43,29 @@ public class BaseClass {
 	  else if (browser.equals("firefox"))
 	  {
 		  System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/geckodriver.exe");
-	      driver = new FirefoxDriver();
+		  DesiredCapabilities capabilities=DesiredCapabilities.firefox();
+		  capabilities.setCapability("marionette", true);
+		  driver = new FirefoxDriver(capabilities); 
+	      
 	  }
 	  else if (browser.equals("ie"))
 	  {
 		  System.setProperty("webdriver.ie.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/IEDriverServer.exe");
 		  driver = new InternetExplorerDriver();
 	  }
-	  
+	  else if (browser.equals("mobile"))
+	  {
+		  Map<String, String> mobileEmulation = new HashMap<String, String>();
+		  mobileEmulation.put("deviceName", "Nexus 5");
+		  Map<String, Object> chromeOptions = new HashMap<String, Object>();
+		  chromeOptions.put("mobileEmulation", mobileEmulation); 
+		  //ChromeOptions chromeOptions = new ChromeOptions();
+          DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+          capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+          System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
+		  driver = new ChromeDriver(capabilities);
+		 		  
+	  }
 	  	  
 	  driver.manage().window().maximize();
 	  
