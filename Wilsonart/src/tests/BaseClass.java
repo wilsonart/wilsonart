@@ -56,7 +56,7 @@ public class BaseClass {
 	  else if (browser.equals("mobile"))
 	  {
 		  Map<String, String> mobileEmulation = new HashMap<String, String>();
-		  mobileEmulation.put("deviceName", "Nexus 5");
+		  mobileEmulation.put("deviceName", "iPhone X");
 		  Map<String, Object> chromeOptions = new HashMap<String, Object>();
 		  chromeOptions.put("mobileEmulation", mobileEmulation); 
 		  //ChromeOptions chromeOptions = new ChromeOptions();
