@@ -15,6 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -27,6 +28,7 @@ public class BaseClass {
 	public String browser;
 	public String URL;
 	
+  @SuppressWarnings("deprecation")
   @Parameters({ "browser"})	
   @BeforeClass
   public void SetupApplication(String browser) {
@@ -51,7 +53,18 @@ public class BaseClass {
 	  else if (browser.equals("ie"))
 	  {
 		  System.setProperty("webdriver.ie.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/IEDriverServer.exe");
-		  driver = new InternetExplorerDriver();
+		  DesiredCapabilities iecapabilities=DesiredCapabilities.internetExplorer();
+		  iecapabilities.setCapability("nativeEvents", false);
+		  iecapabilities.setCapability("unexpectedAlertBehaviour", "accept");
+		  iecapabilities.setCapability("ignoreProtectedModeSettings", true);
+		  iecapabilities.setCapability("disable-popup-blocking", true);
+		  iecapabilities.setCapability("enablePersistentHover", true);
+		  iecapabilities.setCapability("ignoreZoomSetting", true);
+		  iecapabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
+		  iecapabilities.setCapability("EnsureCleanSession", true);
+		  driver = new InternetExplorerDriver(iecapabilities);
+		  
+		 
 	  }
 	  else if (browser.equals("mobile"))
 	  {

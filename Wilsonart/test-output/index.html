@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites, 2 failed tests</span>
+      <span class="top-banner-font-1">2 suites, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods failed suite-WA-US_test_suite"> (show)</a> <!-- show-methods failed suite-WA-US_test_suite -->
                     </span>
                     <div class="method-list-content failed suite-WA-US_test_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="signin(vp00465875@techmahindra.com, 8veNKat5#)">signin(vp00465875@techmahindra.com, 8veNKat5#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="validate_footerlinks">validate_footerlinks</a> <!-- method navigator-link -->
@@ -119,11 +124,6 @@
                       <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods passed suite-WA-US_test_suite"> (show)</a> <!-- show-methods passed suite-WA-US_test_suite -->
                     </span>
                     <div class="method-list-content passed suite-WA-US_test_suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="signin(vp00465875@techmahindra.com, 8veNKat5#)">signin(vp00465875@techmahindra.com, 8veNKat5#)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="validate_topmenulinks">validate_topmenulinks</a> <!-- method navigator-link -->
@@ -149,6 +149,38 @@
               <span class="class-name">tests.US</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signin(vp00465875@techmahindra.com, 8veNKat5#)">
+                  </a> <!-- signin(vp00465875@techmahindra.com, 8veNKat5#) -->
+                  <span class="method-name">signin</span>
+                  <span class="parameters">(vp00465875@techmahindra.com, 8veNKat5#)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == #loginemail
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.234.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:24156/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, unhandledPromptBehavior: dismiss}
+Session ID: cbe48768-2226-44e2-b203-ec6045d78b77
+*** Element info: {Using=id, value=loginemail}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at tests.US.signin(US.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="validate_footerlinks">
@@ -187,14 +219,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signin(vp00465875@techmahindra.com, 8veNKat5#)">
-                  </a> <!-- signin(vp00465875@techmahindra.com, 8veNKat5#) -->
-                  <span class="method-name">signin</span>
-                  <span class="parameters">(vp00465875@techmahindra.com, 8veNKat5#)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="validate_topmenulinks">
                   </a> <!-- validate_topmenulinks -->
                   <span class="method-name">validate_topmenulinks</span>
@@ -214,7 +238,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;b2c sanity&quot;&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;mobile&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
   &lt;suite-files&gt;
     &lt;suite-file path=&quot;WA-US.xml&quot;/&gt;
   &lt;/suite-files&gt;
@@ -233,7 +257,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-US test suite&quot;&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;mobile&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;US&quot; parallel=&quot;methods&quot;&gt;
     &lt;parameter name=&quot;passwd&quot; value=&quot;8veNKat5#&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;vp00465875@techmahindra.com&quot;/&gt;
@@ -322,24 +346,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signin')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 34806);
+data.setCell(0, 3, 21939);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validate_topmenulinks')
 data.setCell(1, 2, 'tests.US')
-data.setCell(1, 3, 10);
+data.setCell(1, 3, 14);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validate_footerlinks')
+data.setCell(2, 1, 'validate_sidemenulinks')
 data.setCell(2, 2, 'tests.US')
-data.setCell(2, 3, 9);
+data.setCell(2, 3, 14);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validate_sidemenulinks')
+data.setCell(3, 1, 'validate_footerlinks')
 data.setCell(3, 2, 'tests.US')
-data.setCell(3, 3, 9);
+data.setCell(3, 3, 13);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -388,32 +412,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.US</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">SetupApplication(mobile)</span>
+                <span class="method-name">SetupApplication(ie)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">signin(vp00465875@techmahindra.com, 8veNKat5#)</span>
-                <span class="method-start">17809 ms</span>
+                <span class="method-start">9290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_footerlinks</span>
-                <span class="method-start">17809 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">validate_topmenulinks</span>
-                <span class="method-start">17809 ms</span>
+                <span class="method-start">9290 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validate_sidemenulinks</span>
-                <span class="method-start">17809 ms</span>
+                <span class="method-start">9290 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_topmenulinks</span>
+                <span class="method-start">9290 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">CloseApplication</span>
-                <span class="method-start">52616 ms</span>
+                <span class="method-start">31232 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
