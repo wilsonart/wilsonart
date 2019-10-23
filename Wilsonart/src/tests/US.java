@@ -67,12 +67,12 @@ public class US extends BaseClass {
 	    hp.Clickonsearchbutton();
 	}*/
 	
-	@Test
+	/*@Test
 	public void Product_Listing()
 	{
 		hp = new HomePage(driver);
 		hp.HovertoProducts();
-	}
+	}*/
 	
 	/*@Test
 	public void Shopping_Cart()
@@ -84,14 +84,24 @@ public class US extends BaseClass {
 	public void Checkout()
 	{
 	Assert.assertFalse(true);
+	}*/
+	
+	
+	@Parameters({ "Fname","Lname","Company", "Email","Passwd"})
+	@Test
+	public void New_Account_Registration(String Fname, String Lname, String Company, String Email, String Passwd) throws Exception
+	{
+	hp = new HomePage(driver);
+	hp.ClickonRegister();
+	Thread.sleep(20000);
+	hp.SelectPrefix(2);
+	Thread.sleep(5000);
+	hp.FilltheForm(Fname, Lname, Company, Email, Passwd);
+	Thread.sleep(5000);
+	hp.click_CreateAccount();
+	Thread.sleep(20000);
 	}
 	
-	@Test
-	public void New_Account_Registration()
-	{
-	Assert.assertFalse(true);
-	}
-	*/
 
 }
 	

@@ -14,16 +14,16 @@
       <![CDATA[======Browser Session Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-23T08:04:33Z" finished-at="2019-10-23T08:04:33Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-23T12:57:42Z" finished-at="2019-10-23T12:57:42Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="26051" started-at="2019-10-23T08:04:06Z" finished-at="2019-10-23T08:04:33Z">
+  <suite name="WA-US test suite" duration-ms="82502" started-at="2019-10-23T12:56:19Z" finished-at="2019-10-23T12:57:41Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="26051" started-at="2019-10-23T08:04:06Z" finished-at="2019-10-23T08:04:33Z">
+    <test name="US" duration-ms="82502" started-at="2019-10-23T12:56:19Z" finished-at="2019-10-23T12:57:41Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="25140" started-at="2019-10-23T08:04:06Z" finished-at="2019-10-23T08:04:32Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="19201" started-at="2019-10-23T12:56:19Z" finished-at="2019-10-23T12:56:38Z">
           <params>
             <param index="0">
               <value>
@@ -43,11 +43,38 @@
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="PASS" signature="Product_Listing()[pri:0, instance:tests.US@57baeedf]" name="Product_Listing" duration-ms="112" started-at="2019-10-23T08:04:32Z" finished-at="2019-10-23T08:04:32Z">
+        <test-method status="PASS" signature="New_Account_Registration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="New_Account_Registration" duration-ms="62440" started-at="2019-10-23T12:56:38Z" finished-at="2019-10-23T12:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[venkat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[palle]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[techm]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[venkatram.palle@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Product_Listing -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="781" started-at="2019-10-23T08:04:32Z" finished-at="2019-10-23T08:04:33Z">
+        </test-method> <!-- New_Account_Registration -->
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="837" started-at="2019-10-23T12:57:41Z" finished-at="2019-10-23T12:57:41Z">
           <reporter-output>
             <line>
               <![CDATA[======Browser Session Ended=======]]>

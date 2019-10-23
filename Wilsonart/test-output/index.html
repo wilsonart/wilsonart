@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-WA-US_test_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Product_Listing">Product_Listing</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)">New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-WA-US_test_suite -->
@@ -127,9 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Product_Listing">
-                  </a> <!-- Product_Listing -->
-                  <span class="method-name">Product_Listing</span>
+                  <a name="New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)">
+                  </a> <!-- New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123) -->
+                  <span class="method-name">New_Account_Registration</span>
+                  <span class="parameters">(venkat, palle, techm, venkatram.palle@gmail.com, test123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,10 +145,15 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;b2c sanity&quot;&gt;
+  &lt;parameter name=&quot;Company&quot; value=&quot;techm&quot;/&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
+  &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
+  &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
+  &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
+  &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
   &lt;suite-files&gt;
     &lt;suite-file path=&quot;WA-US.xml&quot;/&gt;
   &lt;/suite-files&gt;
@@ -164,10 +170,15 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-US test suite&quot;&gt;
+  &lt;parameter name=&quot;Company&quot; value=&quot;techm&quot;/&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
+  &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
+  &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
   &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
+  &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
+  &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;US&quot;&gt;
     &lt;parameter name=&quot;passwd&quot; value=&quot;8veNKat5#&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;vp00465875@techmahindra.com&quot;/&gt;
@@ -254,14 +265,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Product_Listing')
+data.setCell(0, 1, 'New_Account_Registration')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 112);
+data.setCell(0, 3, 62440);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 112 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -314,12 +325,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Product_Listing</span>
-                <span class="method-start">25140 ms</span>
+                <span class="method-name">New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)</span>
+                <span class="method-start">19202 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseApplication</span>
-                <span class="method-start">25254 ms</span>
+                <span class="method-start">81648 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

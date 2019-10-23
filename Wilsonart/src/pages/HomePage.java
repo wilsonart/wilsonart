@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
@@ -41,7 +42,37 @@ WebElement SearchButton;
 @FindBy(xpath="(//a[contains(text(),'Products')])[1]")
 WebElement Products;
 
+@FindBy(xpath="(//a[contains(text(),'Register')])[1]")
+WebElement Register;
 
+@FindBy(xpath="//select[@id='prefix']")
+WebElement Prefix_Selectbox;
+
+@FindBy(xpath="//input[@id='firstname']")
+WebElement FirstName;
+
+@FindBy(xpath="//input[@id='lastname']")
+WebElement LastName;
+
+@FindBy(xpath="//input[@id='company']")
+WebElement Company_bx;
+
+@FindBy(xpath="//input[@id='title']")
+WebElement Title;
+
+@FindBy(xpath="//input[@id='email_address']")
+WebElement Email_address;
+
+@FindBy(xpath="//input[@id='password']")
+WebElement Password ;
+
+@FindBy(xpath="//input[@id='password-confirmation']")
+WebElement Confirm_Password;
+
+@FindBy(xpath="//button[@title='Create an Account']")
+WebElement Create_Account;
+
+		
 public void ClickonFindyourSearch()
 {
 	System.out.println("Method...");
@@ -91,6 +122,36 @@ public void HovertoProducts()
 	action.moveToElement(Products).build().perform();
 }
 
+public void ClickonRegister()
+{
+	Register.click();
+}
 
+public void SelectPrefix(int index)
+{
+	
+	Select prefix=new Select(Prefix_Selectbox);
+	prefix.selectByIndex(index);
+	
+}
+
+
+
+
+public void FilltheForm(String Fname, String Lname, String Company, String Email, String Passwd)
+{
+	FirstName.sendKeys(Fname);
+	LastName.sendKeys(Lname);
+	Company_bx.sendKeys(Company);
+	Email_address.sendKeys(Email);
+	Password.sendKeys(Passwd);
+	Confirm_Password.sendKeys(Passwd);
+	
+}
+
+public void click_CreateAccount()
+{
+	Create_Account.click();
+}
 
 }

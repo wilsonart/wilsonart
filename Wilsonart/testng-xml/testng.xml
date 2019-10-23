@@ -5,6 +5,11 @@
 <parameter name="wilsonart" value="wilsonart" />
 <parameter name="polyrey" value="polyrey" />
 <parameter name="finish" value="Q3006" />
+<parameter name="Fname" value="venkat" />
+<parameter name="Lname" value="palle" />
+<parameter name="Company" value="techm" />
+<parameter name="Email" value="venkatram.palle@gmail.com" />
+<parameter name="Passwd" value="test123" />
 <suite-files>
         <suite-file path="WA-US.xml" />
         <!-- <suite-file path="WA-Polyrey.xml" /> --> 
