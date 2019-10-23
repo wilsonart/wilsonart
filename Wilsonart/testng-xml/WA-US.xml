@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "WA-US test suite" parallel="false">
-   <test name="US" thread-count="5" parallel="methods" >
+   <test name="US" thread-count="5">
    <parameter name="username" value="vp00465875@techmahindra.com" />
    <parameter name="passwd" value="8veNKat5#" />
         <classes>

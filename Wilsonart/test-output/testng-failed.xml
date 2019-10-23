@@ -3,17 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [WA-US test suite]">
   <parameter name="wilsonart" value="wilsonart"/>
   <parameter name="polyrey" value="polyrey"/>
-  <parameter name="browser" value="ie"/>
-  <test thread-count="5" name="US(failed)" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="finish" value="Q3006"/>
+  <test thread-count="5" name="US(failed)">
     <parameter name="passwd" value="8veNKat5#"/>
     <parameter name="username" value="vp00465875@techmahindra.com"/>
     <classes>
       <class name="tests.US">
         <methods>
-          <include name="validate_footerlinks"/>
-          <include name="validate_sidemenulinks"/>
+          <include name="Find_Your_Surface"/>
           <include name="SetupApplication"/>
-          <include name="signin" invocation-numbers="0"/>
           <include name="CloseApplication"/>
         </methods>
       </class> <!-- tests.US -->

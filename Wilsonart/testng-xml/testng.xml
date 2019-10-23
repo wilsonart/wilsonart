@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "b2c sanity" parallel="false">
-<parameter name="browser" value="ie" />
+<parameter name="browser" value="chrome" />
 <parameter name="wilsonart" value="wilsonart" />
 <parameter name="polyrey" value="polyrey" />
+<parameter name="finish" value="Q3006" />
 <suite-files>
         <suite-file path="WA-US.xml" />
         <!-- <suite-file path="WA-Polyrey.xml" /> --> 

@@ -3,6 +3,8 @@ package tests;
 import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import java.util.HashMap;
@@ -19,6 +21,8 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 
 
 
@@ -30,7 +34,7 @@ public class BaseClass {
 	
   @SuppressWarnings("deprecation")
   @Parameters({ "browser"})	
-  @BeforeClass
+  @BeforeMethod
   public void SetupApplication(String browser) {
 	
 	  Reporter.log("=====Browser Session Started=====", true);
@@ -53,18 +57,12 @@ public class BaseClass {
 	  else if (browser.equals("ie"))
 	  {
 		  System.setProperty("webdriver.ie.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/IEDriverServer.exe");
-		  DesiredCapabilities iecapabilities=DesiredCapabilities.internetExplorer();
-		  iecapabilities.setCapability("nativeEvents", false);
-		  iecapabilities.setCapability("unexpectedAlertBehaviour", "accept");
-		  iecapabilities.setCapability("ignoreProtectedModeSettings", true);
-		  iecapabilities.setCapability("disable-popup-blocking", true);
-		  iecapabilities.setCapability("enablePersistentHover", true);
-		  iecapabilities.setCapability("ignoreZoomSetting", true);
-		  iecapabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, true);
-		  iecapabilities.setCapability("EnsureCleanSession", true);
-		  driver = new InternetExplorerDriver(iecapabilities);
+		  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+		  caps.setCapability("ignoreZoomSetting", true);
+		  caps.setCapability("nativeEvents",false);
+		  driver = new InternetExplorerDriver(caps);
 		  
-		 
+		  		 
 	  }
 	  else if (browser.equals("mobile"))
 	  {
@@ -86,14 +84,15 @@ public class BaseClass {
 	  System.out.println("Browser ------  "+browser);
 	  
 	  if(URL.equals("wilsonart"))
-	  driver.get("https://www.wilsonart.com");
+	  //driver.get("https://www.wilsonart.com");
+	  driver.get("http://newdev.wilsonart.com");
 	  else if (URL.equals("polyrey"))
 	  driver.get("https://www.polyrey.com");  
 	  Reporter.log("=====Application has Started======", true);
 	  
 	  }
 
-  @AfterClass
+  @AfterMethod
   public void CloseApplication() {
 	  
 	  driver.quit();

@@ -27,42 +27,71 @@ public class US extends BaseClass {
 	}
 	
 			
-	  @Parameters({ "username","passwd"})
+	 /* @Parameters({ "username","passwd"})
 	  @Test
 	  public void signin(String uname, String pwd) throws Throwable {
 			  hp = new HomePage(driver);
-			  Thread.sleep(20000);
+			  Thread.sleep(10000);
 			  System.out.println("username"+uname);
 			  System.out.println("password"+pwd);
 			  hp.Clickonlink();
-			  driver.findElement(By.id("loginemail")).sendKeys(uname);
-			  driver.findElement(By.id("loginpassword")).sendKeys(pwd);
+			  driver.findElement(By.id("email")).sendKeys(uname); //id = email
+			  driver.findElement(By.id("pass")).sendKeys(pwd); //id = pass
 			  Thread.sleep(7000);
-			  driver.findElement(By.xpath("//button[@type='submit']")).click();
+			  driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
 			  Thread.sleep(5000);
-			  Assert.assertTrue(true);
-			  //Assert.assertTrue(driver.findElement(By.id("//a[@href='https://www.wilsonart.com/']")).isDisplayed(), "Post Login Page found"); 	  	  
-		  }
+			  //Assert.assertTrue(true);
+			  Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),'Sign Out')])[1]")).isDisplayed(), "Post Login Page found"); 
+			//(//*[contains(text(),'Sign Out')])[1]
+		  }*/
 	  
 		  
 
 	
-	@Test
-	public void validate_footerlinks(){
-		Assert.assertFalse(true);
-	}
+	/*@Test
+	public void Find_Your_Surface() throws Exception
+	    {
+		hp = new HomePage(driver);
+		System.out.println("Find your Surface started..");
+		//Thread.sleep(20000);
+		hp.presstab();
+		}*/
 	
-	@Test
-	public void validate_topmenulinks()
+	/*@Parameters({ "finish" })
+		@Test
+	public void Quick_Search(String finish) throws Exception
 	{
-	Assert.assertTrue(true);
+		hp = new HomePage(driver);
+		hp.entersearchkey(finish);
+		Thread.sleep(20000);
+	    hp.Clickonsearchbutton();
+	}*/
+	
+	@Test
+	public void Product_Listing()
+	{
+		hp = new HomePage(driver);
+		hp.HovertoProducts();
+	}
+	
+	/*@Test
+	public void Shopping_Cart()
+	{
+	Assert.assertFalse(true);
 	}
 	
 	@Test
-	public void validate_sidemenulinks()
+	public void Checkout()
 	{
-		Assert.assertFalse(true);
+	Assert.assertFalse(true);
 	}
 	
+	@Test
+	public void New_Account_Registration()
+	{
+	Assert.assertFalse(true);
+	}
+	*/
 
-	}
+}
+	
