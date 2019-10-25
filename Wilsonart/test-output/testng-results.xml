@@ -14,16 +14,16 @@
       <![CDATA[======Browser Session Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-25T09:28:28Z" finished-at="2019-10-25T09:28:28Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-25T09:32:26Z" finished-at="2019-10-25T09:32:26Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="50764" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:28:28Z">
+  <suite name="WA-US test suite" duration-ms="53131" started-at="2019-10-25T09:31:32Z" finished-at="2019-10-25T09:32:26Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="50764" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:28:28Z">
+    <test name="US" duration-ms="53131" started-at="2019-10-25T09:31:32Z" finished-at="2019-10-25T09:32:26Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="14531" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:27:52Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="17710" started-at="2019-10-25T09:31:32Z" finished-at="2019-10-25T09:31:50Z">
           <params>
             <param index="0">
               <value>
@@ -43,23 +43,23 @@
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="FAIL" signature="Find_Your_Surface()[pri:0, instance:tests.US@57baeedf]" name="Find_Your_Surface" duration-ms="33483" started-at="2019-10-25T09:27:52Z" finished-at="2019-10-25T09:28:26Z">
+        <test-method status="FAIL" signature="Find_Your_Surface()[pri:0, instance:tests.US@57baeedf]" name="Find_Your_Surface" duration-ms="32882" started-at="2019-10-25T09:31:50Z" finished-at="2019-10-25T09:32:23Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[Element <input id="category_option_22" class="category_option" name="category_option" type="checkbox"> is not clickable at point (435,202) because another element <div class="loading-mask"> obscures it
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1808, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3873fd5d-f075-4c9b-b651-f960f2adb3c0]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5648, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9a68de7b-b7d8-499c-a666-3e0803723e9a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="category_option_22" class="category_option" name="category_option" type="checkbox"> is not clickable at point (435,202) because another element <div class="loading-mask"> obscures it
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1808, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3873fd5d-f075-4c9b-b651-f960f2adb3c0
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5648, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9a68de7b-b7d8-499c-a666-3e0803723e9a
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -112,7 +112,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Find_Your_Surface -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="2730" started-at="2019-10-25T09:28:26Z" finished-at="2019-10-25T09:28:28Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="2522" started-at="2019-10-25T09:32:23Z" finished-at="2019-10-25T09:32:26Z">
           <reporter-output>
             <line>
               <![CDATA[======Browser Session Ended=======]]>
