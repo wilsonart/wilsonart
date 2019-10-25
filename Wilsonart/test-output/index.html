@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites</span>
+      <span class="top-banner-font-1">2 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-WA-US_test_suite">
-              <span class="suite-name border-passed">WA-US test suite</span>
+              <span class="suite-name border-failed">WA-US test suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-WA-US_test_suite" class="hide-methods passed suite-WA-US_test_suite"> (hide)</a> <!-- hide-methods passed suite-WA-US_test_suite -->
-                      <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods passed suite-WA-US_test_suite"> (show)</a> <!-- show-methods passed suite-WA-US_test_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="hide-methods failed suite-WA-US_test_suite"> (hide)</a> <!-- hide-methods failed suite-WA-US_test_suite -->
+                      <a href="#" panel-name="suite-WA-US_test_suite" class="show-methods failed suite-WA-US_test_suite"> (show)</a> <!-- show-methods failed suite-WA-US_test_suite -->
                     </span>
-                    <div class="method-list-content passed suite-WA-US_test_suite">
+                    <div class="method-list-content failed suite-WA-US_test_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)">New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Find_Your_Surface">Find_Your_Surface</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-WA-US_test_suite -->
+                    </div> <!-- method-list-content failed suite-WA-US_test_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,22 +119,46 @@
         <div panel-name="suite-b2c_sanity" class="panel b2c_sanity">
         </div> <!-- panel b2c_sanity -->
         <div panel-name="suite-WA-US_test_suite" class="panel WA-US_test_suite">
-          <div class="suite-WA-US_test_suite-class-passed">
+          <div class="suite-WA-US_test_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.US</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)">
-                  </a> <!-- New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123) -->
-                  <span class="method-name">New_Account_Registration</span>
-                  <span class="parameters">(venkat, palle, techm, venkatram.palle@gmail.com, test123)</span>
+                  <a name="Find_Your_Surface">
+                  </a> <!-- Find_Your_Surface -->
+                  <span class="method-name">Find_Your_Surface</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button type=&quot;button&quot; class=&quot;search-btn&quot; id=&quot;search-btn&quot; name=&quot;advance_search_submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1125, 125). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.234.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 3621502184284f9a68553b769fe8af5d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pages.HomePage.advance_search(HomePage.java:192)
+	at tests.US.Find_Your_Surface(US.java:59)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-WA-US_test_suite-class-passed -->
+          </div> <!-- suite-WA-US_test_suite-class-failed -->
         </div> <!-- panel WA-US_test_suite -->
         <div panel-name="test-xml-b2c_sanity" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -265,14 +289,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'New_Account_Registration')
+data.setCell(0, 1, 'Find_Your_Surface')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 62440);
+data.setCell(0, 3, 21460);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -325,12 +349,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">New_Account_Registration(venkat, palle, techm, venkatram.palle@gmail.com, test123)</span>
-                <span class="method-start">19202 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Find_Your_Surface</span>
+                <span class="method-start">25680 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseApplication</span>
-                <span class="method-start">81648 ms</span>
+                <span class="method-start">47143 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

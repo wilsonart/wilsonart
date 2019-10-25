@@ -10,10 +10,33 @@
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">b2c sanity</th></tr>
 <tr><th colspan="7">WA-US test suite</th></tr>
-<tr><td><a href="#t0">US</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">82,502</td><td></td><td></td></tr>
+<tr><td><a href="#t0">US</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,085</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">b2c sanity</th></tr></tbody><tbody><tr><th colspan="4">WA-US test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">US &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.US</td><td><a href="#m0">New_Account_Registration</a></td><td rowspan="1">1571835398707</td><td rowspan="1">62440</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">b2c sanity</th></tr></tbody><tbody><tr><th colspan="4">WA-US test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">US &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.US</td><td><a href="#m0">Find_Your_Surface</a></td><td rowspan="1">1571992577892</td><td rowspan="1">21460</td></tr></tbody>
 </table>
-<h2>US</h2><h3 id="m0">tests.US#New_Account_Registration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>venkat</td><td>palle</td><td>techm</td><td>venkatram.palle@gmail.com</td><td>test123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>US</h2><h3 id="m0">tests.US#Find_Your_Surface</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button type=&quot;button&quot; class=&quot;search-btn&quot; id=&quot;search-btn&quot; name=&quot;advance_search_submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1125, 125). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.234.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 3621502184284f9a68553b769fe8af5d
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at pages.HomePage.advance_search(HomePage.java:192)
+	at tests.US.Find_Your_Surface(US.java:59)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

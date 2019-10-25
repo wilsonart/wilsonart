@@ -30,7 +30,7 @@ public HomePage(WebDriver driver){
 @FindBy(xpath="(//*[contains(text(),'Sign In')])[1]")
 WebElement SignIn;
 
-@FindBy(xpath="//span[contains(text(), 'Find Your Surface')]")
+@FindBy(xpath=".//button[@id='adv_button']")
 WebElement FindYourSearch;
 
 @FindBy(xpath="//input[@id='search']")
@@ -69,9 +69,24 @@ WebElement Password ;
 @FindBy(xpath="//input[@id='password-confirmation']")
 WebElement Confirm_Password;
 
-@FindBy(xpath="//button[@title='Create an Account']")
+@FindBy(xpath=".//button[@type='submit' and @title='Create an Account']")
 WebElement Create_Account;
 
+@FindBy(xpath=".//input[@id='category_option_22']")
+WebElement Checkbox_Quartz;
+
+@FindBy(xpath=".//input[@id='design_group_15']")
+WebElement Designgroup_Medium;
+
+
+@FindBy(xpath=".//input[@id='color_group_25']")
+WebElement Colorgroup_BlackGrey;
+
+@FindBy(xpath=".//button[@name='advance_search_reset']")
+WebElement adv_search_reset;
+
+@FindBy(xpath=".//button[@id='search-btn']")
+WebElement adv_searchbtn;
 		
 public void ClickonFindyourSearch()
 {
@@ -109,11 +124,13 @@ public void Clickonlink()
 public void presstab() throws Exception
 {
 				
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	/*WebDriverWait wait = new WebDriverWait(driver, 20);
 	WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(), 'Find Your Surface')]")));
 	JavascriptExecutor executor = (JavascriptExecutor)driver;
 	executor.executeScript("arguments[0].click();", element);
-	Thread.sleep(20000);
+	Thread.sleep(20000);*/
+	FindYourSearch.click();
+	
 }
 
 public void HovertoProducts()
@@ -152,6 +169,28 @@ public void FilltheForm(String Fname, String Lname, String Company, String Email
 public void click_CreateAccount()
 {
 	Create_Account.click();
+}
+
+public void advance_search() throws Exception
+{
+	
+	Thread.sleep(5000);
+	Checkbox_Quartz.click();
+	/*Thread.sleep(1000);
+	Designgroup_Medium.click();
+	Thread.sleep(1000);
+	Colorgroup_BlackGrey.click();
+	Thread.sleep(1000);
+	adv_search_reset.click();
+	Thread.sleep(1000);
+	Checkbox_Quartz.click();
+	Thread.sleep(1000);
+	Designgroup_Medium.click();
+	Thread.sleep(1000);
+	Colorgroup_BlackGrey.click();*/
+	Thread.sleep(1000);
+	adv_searchbtn.click();
+	Thread.sleep(1000);
 }
 
 }

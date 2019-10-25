@@ -48,14 +48,16 @@ public class US extends BaseClass {
 		  
 
 	
-	/*@Test
+	@Test
 	public void Find_Your_Surface() throws Exception
 	    {
 		hp = new HomePage(driver);
 		System.out.println("Find your Surface started..");
-		//Thread.sleep(20000);
+		Thread.sleep(10000);
 		hp.presstab();
-		}*/
+		Thread.sleep(5000);
+		hp.advance_search();
+		}
 	
 	/*@Parameters({ "finish" })
 		@Test
@@ -87,7 +89,7 @@ public class US extends BaseClass {
 	}*/
 	
 	
-	@Parameters({ "Fname","Lname","Company", "Email","Passwd"})
+	/*@Parameters({ "Fname","Lname","Company", "Email","Passwd"})
 	@Test
 	public void New_Account_Registration(String Fname, String Lname, String Company, String Email, String Passwd) throws Exception
 	{
@@ -100,7 +102,7 @@ public class US extends BaseClass {
 	Thread.sleep(5000);
 	hp.click_CreateAccount();
 	Thread.sleep(20000);
-	}
+	}*/
 	
 
 }
