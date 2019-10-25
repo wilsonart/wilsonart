@@ -130,20 +130,15 @@
                   <a name="Find_Your_Surface">
                   </a> <!-- Find_Your_Surface -->
                   <span class="method-name">Find_Your_Surface</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button type=&quot;button&quot; class=&quot;search-btn&quot; id=&quot;search-btn&quot; name=&quot;advance_search_submit&quot;&gt;...&lt;/button&gt; is not clickable at point (1125, 125). Other element would receive the click: &lt;div class=&quot;loading-mask&quot; data-role=&quot;loader&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=70.0.3538.67)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;category_option_22&quot; class=&quot;category_option&quot; name=&quot;category_option&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (435,202) because another element &lt;div class=&quot;loading-mask&quot;&gt; obscures it
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
 System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.234.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 3621502184284f9a68553b769fe8af5d
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1808, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3873fd5d-f075-4c9b-b651-f960f2adb3c0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
@@ -151,7 +146,7 @@ Session ID: 3621502184284f9a68553b769fe8af5d
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at pages.HomePage.advance_search(HomePage.java:192)
+	at pages.HomePage.advance_search(HomePage.java:182)
 	at tests.US.Find_Your_Surface(US.java:59)
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
@@ -174,7 +169,7 @@ Session ID: 3621502184284f9a68553b769fe8af5d
   &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
   &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
   &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
   &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
@@ -199,7 +194,7 @@ Session ID: 3621502184284f9a68553b769fe8af5d
   &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
   &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
   &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
   &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
@@ -291,12 +286,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Find_Your_Surface')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 21460);
+data.setCell(0, 3, 33483);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -345,18 +340,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.US</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">SetupApplication(chrome)</span>
+                <span class="method-name">SetupApplication(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Find_Your_Surface</span>
-                <span class="method-start">25680 ms</span>
+                <span class="method-start">14531 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseApplication</span>
-                <span class="method-start">47143 ms</span>
+                <span class="method-start">48017 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

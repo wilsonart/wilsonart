@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name = "b2c sanity" parallel="false">
-<parameter name="browser" value="chrome" />
+<parameter name="browser" value="firefox" />
 <parameter name="wilsonart" value="wilsonart" />
 <parameter name="polyrey" value="polyrey" />
 <parameter name="finish" value="Q3006" />

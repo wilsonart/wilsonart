@@ -42,13 +42,13 @@ public class BaseClass {
 	  	   
 	  if(browser.equals("chrome"))
 	  {
-		  System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 	      driver = new ChromeDriver();
 		  System.out.println("browser--"+browser);
 	  }
 	  else if (browser.equals("firefox"))
 	  {
-		  System.setProperty("webdriver.gecko.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", "./Driver/geckodriver.exe");
 		  DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		  capabilities.setCapability("marionette", true);
 		  driver = new FirefoxDriver(capabilities); 
@@ -56,7 +56,7 @@ public class BaseClass {
 	  }
 	  else if (browser.equals("ie"))
 	  {
-		  System.setProperty("webdriver.ie.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/IEDriverServer.exe");
+		  System.setProperty("webdriver.ie.driver", "./Driver/IEDriverServer.exe");
 		  DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
 		  caps.setCapability("ignoreZoomSetting", true);
 		  caps.setCapability("nativeEvents",false);
@@ -73,7 +73,7 @@ public class BaseClass {
 		  //ChromeOptions chromeOptions = new ChromeOptions();
           DesiredCapabilities capabilities = DesiredCapabilities.chrome();
           capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-          System.setProperty("webdriver.chrome.driver", "C:/Users/vp00465875/git/wilsonart/Wilsonart/Driver/chromedriver.exe");
+          System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
 		  driver = new ChromeDriver(capabilities);
 		 		  
 	  }

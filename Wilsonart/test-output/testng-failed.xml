@@ -6,7 +6,7 @@
   <parameter name="Email" value="venkatram.palle@gmail.com"/>
   <parameter name="polyrey" value="polyrey"/>
   <parameter name="Lname" value="palle"/>
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="firefox"/>
   <parameter name="finish" value="Q3006"/>
   <parameter name="Fname" value="venkat"/>
   <parameter name="Passwd" value="test123"/>

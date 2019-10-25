@@ -175,8 +175,12 @@ public void advance_search() throws Exception
 {
 	
 	Thread.sleep(5000);
+	adv_searchbtn.click();
+	Thread.sleep(4000);
+	FindYourSearch.click();
+	Thread.sleep(2000);
 	Checkbox_Quartz.click();
-	/*Thread.sleep(1000);
+	Thread.sleep(1000);
 	Designgroup_Medium.click();
 	Thread.sleep(1000);
 	Colorgroup_BlackGrey.click();
@@ -187,7 +191,7 @@ public void advance_search() throws Exception
 	Thread.sleep(1000);
 	Designgroup_Medium.click();
 	Thread.sleep(1000);
-	Colorgroup_BlackGrey.click();*/
+	Colorgroup_BlackGrey.click();
 	Thread.sleep(1000);
 	adv_searchbtn.click();
 	Thread.sleep(1000);

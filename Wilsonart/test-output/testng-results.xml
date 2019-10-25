@@ -5,7 +5,7 @@
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[browser is chrome]]>
+      <![CDATA[browser is firefox]]>
     </line>
     <line>
       <![CDATA[=====Application has Started======]]>
@@ -14,20 +14,20 @@
       <![CDATA[======Browser Session Ended=======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-25T08:36:40Z" finished-at="2019-10-25T08:36:40Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-10-25T09:28:28Z" finished-at="2019-10-25T09:28:28Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="48085" started-at="2019-10-25T08:35:52Z" finished-at="2019-10-25T08:36:40Z">
+  <suite name="WA-US test suite" duration-ms="50764" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:28:28Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="48085" started-at="2019-10-25T08:35:52Z" finished-at="2019-10-25T08:36:40Z">
+    <test name="US" duration-ms="50764" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:28:28Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="25679" started-at="2019-10-25T08:35:52Z" finished-at="2019-10-25T08:36:17Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@57baeedf]" name="SetupApplication" is-config="true" duration-ms="14531" started-at="2019-10-25T09:27:38Z" finished-at="2019-10-25T09:27:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
@@ -36,45 +36,37 @@
               <![CDATA[=====Browser Session Started=====]]>
             </line>
             <line>
-              <![CDATA[browser is chrome]]>
+              <![CDATA[browser is firefox]]>
             </line>
             <line>
               <![CDATA[=====Application has Started======]]>
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="FAIL" signature="Find_Your_Surface()[pri:0, instance:tests.US@57baeedf]" name="Find_Your_Surface" duration-ms="21460" started-at="2019-10-25T08:36:17Z" finished-at="2019-10-25T08:36:39Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="Find_Your_Surface()[pri:0, instance:tests.US@57baeedf]" name="Find_Your_Surface" duration-ms="33483" started-at="2019-10-25T09:27:52Z" finished-at="2019-10-25T09:28:26Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[unknown error: Element <button type="button" class="search-btn" id="search-btn" name="advance_search_submit">...</button> is not clickable at point (1125, 125). Other element would receive the click: <div class="loading-mask" data-role="loader" style="display: block;">...</div>
-  (Session info: chrome=70.0.3538.67)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Element <input id="category_option_22" class="category_option" name="category_option" type="checkbox"> is not clickable at point (435,202) because another element <div class="loading-mask"> obscures it
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 3621502184284f9a68553b769fe8af5d]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1808, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3873fd5d-f075-4c9b-b651-f960f2adb3c0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button type="button" class="search-btn" id="search-btn" name="advance_search_submit">...</button> is not clickable at point (1125, 125). Other element would receive the click: <div class="loading-mask" data-role="loader" style="display: block;">...</div>
-  (Session info: chrome=70.0.3538.67)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="category_option_22" class="category_option" name="category_option" type="checkbox"> is not clickable at point (435,202) because another element <div class="loading-mask"> obscures it
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'INBASDPC06818', ip: '10.53.234.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50267}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 3621502184284f9a68553b769fe8af5d
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 1808, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3873fd5d-f075-4c9b-b651-f960f2adb3c0
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
@@ -86,7 +78,7 @@ at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy11.click(Unknown Source)
-at pages.HomePage.advance_search(HomePage.java:192)
+at pages.HomePage.advance_search(HomePage.java:182)
 at tests.US.Find_Your_Surface(US.java:59)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -116,11 +108,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Find_Your_Surface -->
-        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="927" started-at="2019-10-25T08:36:39Z" finished-at="2019-10-25T08:36:40Z">
+        <test-method status="PASS" signature="CloseApplication()[pri:0, instance:tests.US@57baeedf]" name="CloseApplication" is-config="true" duration-ms="2730" started-at="2019-10-25T09:28:26Z" finished-at="2019-10-25T09:28:28Z">
           <reporter-output>
             <line>
               <![CDATA[======Browser Session Ended=======]]>
