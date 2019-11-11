@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name = "WA-US test suite" parallel="false">
-   <test name="US" thread-count="5">
-   <parameter name="username" value="vp00465875@techmahindra.com" />
-   <parameter name="passwd" value="8veNKat5#" />
+ <suite name = "WA-US test suite" parallel="tests" thread-count="1"> 
+   <test name="US" >
+  <!--  <parameter name="username" value="vp00465875@techmahindra.com" />
+   <parameter name="passwd" value="8veNKat5#" /> -->
         <classes>
             <class name="tests.US"/>
-        </classes>
-    </test> <!-- First Test -->
-</suite>
+            <methods>
+            <exclude name = "New_Account_Registration" /> 
+            <include name = "Signin" />
+            <exclude name = "Checkout" />
+            <exclude name = "Shopping_Cart" />
+            <exclude name = "Find_Your_Surface" />
+            <exclude name = "Product_Listing" /> 
+            <exclude name = "Quick_Search" />  
+            </methods>
+        </classes> 
+    </test> --> <!-- First Test -->
+ </suite>
+<!--  <suite name="Suite" parallel="methods" thread-count="2">
+<test name="US">
+<classes>
+<class name="tests.US"/>
+</classes>
+</test> Test
+</suite> Suite -->

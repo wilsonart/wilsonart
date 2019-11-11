@@ -25,7 +25,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 
-
 public class BaseClass {
   
 	WebDriver driver;
@@ -92,12 +91,12 @@ public class BaseClass {
 	  
 	  }
 
-  @AfterMethod
+/*  @AfterMethod
   public void CloseApplication() {
 	  
 	  driver.quit();
 	  Reporter.log("======Browser Session Ended=======", true);
 	    
   }
-
+*/
 }
