@@ -244,14 +244,14 @@ public void Clickonlink()
 	SignIn.click();
 }
 
-public void SignInToApplication(String uname, String pwd,String Actual) throws InterruptedException
+public void SignInToApplication(String uname, String pwd,String Expected) throws InterruptedException
 {
 	dw = new DynamicWebElement(driver);
 	username.sendKeys(uname);
 	password.sendKeys(pwd);
 	Login.click();
 	Thread.sleep(10000);
-	Actual = AfterLogin.getText();
+	String Actual = AfterLogin.getText();
 	System.out.println(Actual);	
 }
 

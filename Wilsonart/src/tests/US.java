@@ -43,7 +43,7 @@ public class US extends BaseClass {
 		  System.out.println(Common.fromProperties("Configuration", "username"));
 		  System.out.println(Common.fromProperties("Configuration", "password"));
 		  hp.Clickonlink();
-		  hp.SignInToApplication(Common.fromProperties("Configuration", "username"),Common.fromProperties("Configuration", "password"),"");
+		  hp.SignInToApplication(Common.fromProperties("Configuration", "username"),Common.fromProperties("Configuration", "password"),Common.fromProperties("Configuration", "Expected"));
 		  //Thread.sleep(5000);
 		  //Assert.assertTrue(true);
 		  //Assert.assertTrue(driver.findElement(By.xpath("(//*[contains(text(),'Sign Out')])[1]")).isDisplayed(), "Post Login Page found"); 
