@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-WA-US_test_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Find_Your_Surface">Find_Your_Surface</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Signin">Signin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-WA-US_test_suite -->
@@ -127,28 +127,42 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Find_Your_Surface">
-                  </a> <!-- Find_Your_Surface -->
-                  <span class="method-name">Find_Your_Surface</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;category_option_22&quot; class=&quot;category_option&quot; name=&quot;category_option&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (435,202) because another element &lt;div class=&quot;loading-mask&quot;&gt; obscures it
+                  <a name="Signin">
+                  </a> <!-- Signin -->
+                  <span class="method-name">Signin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),&apos;Sign In&apos;)])[1]&quot;}
+  (Session info: chrome=70.0.3538.67)
+  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.234.165&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 69.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191009172106, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 5648, moz:profile: C:\Users\vp00465875\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9a68de7b-b7d8-499c-a666-3e0803723e9a
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.98.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 522181ff09a5bb50c8fd88b12757f3d5
+*** Element info: {Using=xpath, value=(//*[contains(text(),&apos;Sign In&apos;)])[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at pages.HomePage.advance_search(HomePage.java:182)
-	at tests.US.Find_Your_Surface(US.java:59)
-... Removed 34 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pages.HomePage.Clickonlink(HomePage.java:244)
+	at tests.US.Signin(US.java:45)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -164,15 +178,9 @@ Session ID: 9a68de7b-b7d8-499c-a666-3e0803723e9a
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;b2c sanity&quot;&gt;
-  &lt;parameter name=&quot;Company&quot; value=&quot;techm&quot;/&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
-  &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
-  &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
-  &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
-  &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;suite-files&gt;
     &lt;suite-file path=&quot;WA-US.xml&quot;/&gt;
   &lt;/suite-files&gt;
@@ -188,21 +196,23 @@ Session ID: 9a68de7b-b7d8-499c-a666-3e0803723e9a
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-US test suite&quot;&gt;
-  &lt;parameter name=&quot;Company&quot; value=&quot;techm&quot;/&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;WA-US test suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;wilsonart&quot; value=&quot;wilsonart&quot;/&gt;
-  &lt;parameter name=&quot;Email&quot; value=&quot;venkatram.palle@gmail.com&quot;/&gt;
   &lt;parameter name=&quot;polyrey&quot; value=&quot;polyrey&quot;/&gt;
-  &lt;parameter name=&quot;Lname&quot; value=&quot;palle&quot;/&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
-  &lt;parameter name=&quot;finish&quot; value=&quot;Q3006&quot;/&gt;
-  &lt;parameter name=&quot;Fname&quot; value=&quot;venkat&quot;/&gt;
-  &lt;parameter name=&quot;Passwd&quot; value=&quot;test123&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;US&quot;&gt;
-    &lt;parameter name=&quot;passwd&quot; value=&quot;8veNKat5#&quot;/&gt;
-    &lt;parameter name=&quot;username&quot; value=&quot;vp00465875@techmahindra.com&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;US&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.US&quot;/&gt;
+      &lt;class name=&quot;tests.US&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Signin&quot;/&gt;
+          &lt;exclude name=&quot;New_Account_Registration&quot;/&gt;
+          &lt;exclude name=&quot;Checkout&quot;/&gt;
+          &lt;exclude name=&quot;Shopping_Cart&quot;/&gt;
+          &lt;exclude name=&quot;Find_Your_Surface&quot;/&gt;
+          &lt;exclude name=&quot;Product_Listing&quot;/&gt;
+          &lt;exclude name=&quot;Quick_Search&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.US --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- US --&gt;
 &lt;/suite&gt; &lt;!-- WA-US test suite --&gt;
@@ -284,14 +294,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Find_Your_Surface')
+data.setCell(0, 1, 'Signin')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 32882);
+data.setCell(0, 3, 10169);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -320,9 +330,26 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-WA-US_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.US</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">New_Account_Registration</span>
+                <br/>
+                <span class="ignored-method-name">Find_Your_Surface</span>
+                <br/>
+                <span class="ignored-method-name">Shopping_Cart</span>
+                <br/>
+                <span class="ignored-method-name">Checkout</span>
+                <br/>
+                <span class="ignored-method-name">Product_Listing</span>
+                <br/>
+                <span class="ignored-method-name">Quick_Search</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-b2c_sanity" class="panel">
@@ -340,19 +367,15 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.US</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">SetupApplication(firefox)</span>
+                <span class="method-name">SetupApplication(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Find_Your_Surface</span>
-                <span class="method-start">17710 ms</span>
+                <span class="method-name">Signin</span>
+                <span class="method-start">71014 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">CloseApplication</span>
-                <span class="method-start">50595 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [WA-US test suite]">
-  <parameter name="Company" value="techm"/>
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [WA-US test suite]" parallel="tests">
   <parameter name="wilsonart" value="wilsonart"/>
-  <parameter name="Email" value="venkatram.palle@gmail.com"/>
   <parameter name="polyrey" value="polyrey"/>
-  <parameter name="Lname" value="palle"/>
-  <parameter name="browser" value="firefox"/>
-  <parameter name="finish" value="Q3006"/>
-  <parameter name="Fname" value="venkat"/>
-  <parameter name="Passwd" value="test123"/>
-  <test thread-count="5" name="US(failed)">
-    <parameter name="passwd" value="8veNKat5#"/>
-    <parameter name="username" value="vp00465875@techmahindra.com"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="1" name="US(failed)" parallel="tests">
     <classes>
       <class name="tests.US">
         <methods>
-          <include name="Find_Your_Surface"/>
+          <include name="Signin"/>
           <include name="SetupApplication"/>
-          <include name="CloseApplication"/>
         </methods>
       </class> <!-- tests.US -->
     </classes>
