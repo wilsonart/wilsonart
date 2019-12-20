@@ -57,13 +57,13 @@ WebElement LoggedInUser;
 //div[@class='panel header']//span[@class='after-login'][contains(text(),'Hello, venkatram!')]  
 
 
-@FindBy(xpath=".//button[@id='adv_button']")
+@FindBy(xpath="//span[contains(text(),'Find Your Surface')]")
 WebElement FindYourSearch;
 
-@FindBy(xpath="//input[@id='search']")
+@FindBy(xpath="//input[@name='q']")
 WebElement SearchBox;
 
-@FindBy(xpath="(//button[@type='submit'])[1]")
+@FindBy(xpath="//button[@class='action search'] ")
 WebElement SearchButton;
 
 @FindBy(xpath="(//a[contains(text(),'Products')])[1]")
@@ -123,7 +123,7 @@ WebElement Colorgroup_BlackGrey;
 @FindBy(xpath=".//button[@name='advance_search_reset']")
 WebElement adv_search_reset;*/
 
-@FindBy(xpath="//div[@class='fys_buttons']/button[@name='advance_search_submit']")
+@FindBy(xpath="//button[@name='advance_search_submit']")
 WebElement adv_searchbtn;
 
 
@@ -343,8 +343,8 @@ public void advance_search() throws Exception
 	Thread.sleep(5000);
 	
 	//Color Group
-	ChkBox_ColorGroup_AmberGold.click();
-	Thread.sleep(5000);
+	//ChkBox_ColorGroup_AmberGold.click();
+	//Thread.sleep(5000);
 /*	ChkBox_ColorGroup_AmberOrange.click();
 	Thread.sleep(5000);
 	ChkBox_ColorGroup_BlackGrey.click();
@@ -393,10 +393,5 @@ public void advance_search() throws Exception
 	adv_searchbtn.click();
 	Thread.sleep(1000);*/
 	
-	
-
-
-
-
 
 }
