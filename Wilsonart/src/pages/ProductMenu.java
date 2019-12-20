@@ -28,8 +28,9 @@ public ProductMenu(WebDriver driver){
     PageFactory.initElements(driver, this);
 }
 	
-@FindBy(xpath="//a[@class='mega-menu us-en__link'][contains(text(),'Products')]")
+@FindBy(xpath="//a[contains(text(),'Products')]")
 WebElement ProductMainMenu;
+
 @FindBy(xpath="//li[@class='mega-menu us-en__inner-item mega-menu us-en__inner-item--level1 mega-menu us-en__inner-item--parent active']//a[@class='mega-menu us-en__inner-link'][contains(text(),'All Designs')]")
 WebElement HLP_AllDesigns;
 
@@ -41,6 +42,23 @@ WebElement ViewCart;
 
 @FindBy(xpath="//td[@class='col item']//a[contains(text(),'ProductValue')]")
 WebElement ProductName;
+
+@FindBy(xpath="//a[@id='sample_order_6146']")
+WebElement selectSampleProduct;
+
+@FindBy(xpath="//select[@name='options[7145]']")
+WebElement selectProductType;
+
+@FindBy(xpath="//select[@name='options[7144]']")
+WebElement selectProductFinish;
+
+@FindBy(xpath="//select[@id='qty_6146']")
+WebElement selectProductQuantity;
+
+
+
+
+
  
 public void productCheckout() throws InterruptedException
 {
@@ -49,6 +67,20 @@ public void productCheckout() throws InterruptedException
 	MouseOver.perform();
 	HLP_AllDesigns.click();
 	Thread.sleep(5000);
+	selectSampleProduct.click();
+	Thread.sleep(2000);
+	selectProductType.click();
+	
+	/*Select s = new Select(selectProductType);
+	s.selectByIndex(0);*/
+	/*Thread.sleep(3000);
+	selectProductFinish.click();
+	Select s1 = new Select(selectProductFinish);
+	s1.selectByIndex(0);
+	Thread.sleep(3000);
+	selectProductQuantity.click();
+	Select s2 = new Select(selectProductQuantity);
+	s2.selectByIndex(1);*/	
 	
 }
 
