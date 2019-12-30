@@ -10,21 +10,22 @@
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">b2c sanity</th></tr>
 <tr><th colspan="7">WA-US test suite</th></tr>
-<tr><td><a href="#t0">US</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">81,206</td><td></td><td></td></tr>
+<tr><td><a href="#t0">US</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,206</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">b2c sanity</th></tr></tbody><tbody><tr><th colspan="4">WA-US test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">US &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.US</td><td><a href="#m0">Signin</a></td><td rowspan="1">1574332881272</td><td rowspan="1">10169</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">b2c sanity</th></tr></tbody><tbody><tr><th colspan="4">WA-US test suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">US &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.US</td><td><a href="#m0">Checkout</a></td><td rowspan="1">1577421676721</td><td rowspan="1">45755</td></tr></tbody>
 </table>
-<h2>US</h2><h3 id="m0">tests.US#Signin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),&apos;Sign In&apos;)])[1]&quot;}
+<h2>US</h2><h3 id="m0">tests.US#Checkout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //select[@name=&apos;options[13878]&apos; because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//select[@name=&apos;options[13878]&apos;&apos; is not a valid XPath expression.
   (Session info: chrome=70.0.3538.67)
   (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.98.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.98.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 522181ff09a5bb50c8fd88b12757f3d5
-*** Element info: {Using=xpath, value=(//*[contains(text(),&apos;Sign In&apos;)])[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 9bdc8cb017400d0842a89458f8077de3
+*** Element info: {Using=xpath, value=//select[@name=&apos;options[13878]&apos;}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -40,8 +41,8 @@ Session ID: 522181ff09a5bb50c8fd88b12757f3d5
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at pages.HomePage.Clickonlink(HomePage.java:244)
-	at tests.US.Signin(US.java:45)
+	at pages.ProductMenu.productCheckout(ProductMenu.java:82)
+	at tests.US.Checkout(US.java:62)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)

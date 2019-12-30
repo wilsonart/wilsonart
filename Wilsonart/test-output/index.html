@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-WA-US_test_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Signin">Signin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-WA-US_test_suite" title="tests.US" hash-for-method="Checkout">Checkout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-WA-US_test_suite -->
@@ -127,20 +127,21 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Signin">
-                  </a> <!-- Signin -->
-                  <span class="method-name">Signin</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[contains(text(),&apos;Sign In&apos;)])[1]&quot;}
+                  <a name="Checkout">
+                  </a> <!-- Checkout -->
+                  <span class="method-name">Checkout</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //select[@name=&apos;options[13878]&apos; because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//select[@name=&apos;options[13878]&apos;&apos; is not a valid XPath expression.
   (Session info: chrome=70.0.3538.67)
   (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.98.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+System info: host: &apos;INBASDPC06818&apos;, ip: &apos;10.53.98.150&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 522181ff09a5bb50c8fd88b12757f3d5
-*** Element info: {Using=xpath, value=(//*[contains(text(),&apos;Sign In&apos;)])[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 9bdc8cb017400d0842a89458f8077de3
+*** Element info: {Using=xpath, value=//select[@name=&apos;options[13878]&apos;}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -156,8 +157,8 @@ Session ID: 522181ff09a5bb50c8fd88b12757f3d5
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at pages.HomePage.Clickonlink(HomePage.java:244)
-	at tests.US.Signin(US.java:45)
+	at pages.ProductMenu.productCheckout(ProductMenu.java:82)
+	at tests.US.Checkout(US.java:62)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
@@ -204,9 +205,9 @@ Session ID: 522181ff09a5bb50c8fd88b12757f3d5
     &lt;classes&gt;
       &lt;class name=&quot;tests.US&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Signin&quot;/&gt;
+          &lt;include name=&quot;Checkout&quot;/&gt;
           &lt;exclude name=&quot;New_Account_Registration&quot;/&gt;
-          &lt;exclude name=&quot;Checkout&quot;/&gt;
+          &lt;exclude name=&quot;Signin&quot;/&gt;
           &lt;exclude name=&quot;Shopping_Cart&quot;/&gt;
           &lt;exclude name=&quot;Find_Your_Surface&quot;/&gt;
           &lt;exclude name=&quot;Product_Listing&quot;/&gt;
@@ -294,14 +295,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Signin')
+data.setCell(0, 1, 'Checkout')
 data.setCell(0, 2, 'tests.US')
-data.setCell(0, 3, 10169);
+data.setCell(0, 3, 45755);
 window.suiteTableData['WA-US_test_suite']= { tableData: data, tableDiv: 'times-div-WA-US_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-WA-US_test_suite">
               </div> <!-- times-div-WA-US_test_suite -->
             </div> <!-- times-div -->
@@ -336,13 +337,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.US</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">Signin</span>
+                <br/>
                 <span class="ignored-method-name">New_Account_Registration</span>
                 <br/>
                 <span class="ignored-method-name">Find_Your_Surface</span>
                 <br/>
                 <span class="ignored-method-name">Shopping_Cart</span>
-                <br/>
-                <span class="ignored-method-name">Checkout</span>
                 <br/>
                 <span class="ignored-method-name">Product_Listing</span>
                 <br/>
@@ -373,8 +374,8 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Signin</span>
-                <span class="method-start">71014 ms</span>
+                <span class="method-name">Checkout</span>
+                <span class="method-start">20432 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -11,16 +11,16 @@
       <![CDATA[=====Application has Started======]]>
     </line>
   </reporter-output>
-  <suite name="b2c sanity" duration-ms="0" started-at="2019-11-21T10:41:31Z" finished-at="2019-11-21T10:41:31Z">
+  <suite name="b2c sanity" duration-ms="0" started-at="2019-12-27T04:42:02Z" finished-at="2019-12-27T04:42:02Z">
     <groups>
     </groups>
   </suite> <!-- b2c sanity -->
-  <suite name="WA-US test suite" duration-ms="81206" started-at="2019-11-21T10:40:10Z" finished-at="2019-11-21T10:41:31Z">
+  <suite name="WA-US test suite" duration-ms="66206" started-at="2019-12-27T04:40:56Z" finished-at="2019-12-27T04:42:02Z">
     <groups>
     </groups>
-    <test name="US" duration-ms="81206" started-at="2019-11-21T10:40:10Z" finished-at="2019-11-21T10:41:31Z">
+    <test name="US" duration-ms="66206" started-at="2019-12-27T04:40:56Z" finished-at="2019-12-27T04:42:02Z">
       <class name="tests.US">
-        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@5442a311]" name="SetupApplication" is-config="true" duration-ms="71014" started-at="2019-11-21T10:40:10Z" finished-at="2019-11-21T10:41:21Z">
+        <test-method status="PASS" signature="SetupApplication(java.lang.String)[pri:0, instance:tests.US@5442a311]" name="SetupApplication" is-config="true" duration-ms="20432" started-at="2019-12-27T04:40:56Z" finished-at="2019-12-27T04:41:16Z">
           <params>
             <param index="0">
               <value>
@@ -40,33 +40,35 @@
             </line>
           </reporter-output>
         </test-method> <!-- SetupApplication -->
-        <test-method status="FAIL" signature="Signin()[pri:0, instance:tests.US@5442a311]" name="Signin" duration-ms="10169" started-at="2019-11-21T10:41:21Z" finished-at="2019-11-21T10:41:31Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Checkout()[pri:0, instance:tests.US@5442a311]" name="Checkout" duration-ms="45755" started-at="2019-12-27T04:41:16Z" finished-at="2019-12-27T04:42:02Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//*[contains(text(),'Sign In')])[1]"}
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //select[@name='options[13878]' because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//select[@name='options[13878]'' is not a valid XPath expression.
   (Session info: chrome=70.0.3538.67)
   (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'INBASDPC06818', ip: '10.53.98.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'INBASDPC06818', ip: '10.53.98.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 522181ff09a5bb50c8fd88b12757f3d5
-*** Element info: {Using=xpath, value=(//*[contains(text(),'Sign In')])[1]}]]>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 9bdc8cb017400d0842a89458f8077de3
+*** Element info: {Using=xpath, value=//select[@name='options[13878]'}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[contains(text(),'Sign In')])[1]"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //select[@name='options[13878]' because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//select[@name='options[13878]'' is not a valid XPath expression.
   (Session info: chrome=70.0.3538.67)
   (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'INBASDPC06818', ip: '10.53.98.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+System info: host: 'INBASDPC06818', ip: '10.53.98.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55320}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
-Session ID: 522181ff09a5bb50c8fd88b12757f3d5
-*** Element info: {Using=xpath, value=(//*[contains(text(),'Sign In')])[1]}
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\VP0046~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.67, webStorageEnabled: true}
+Session ID: 9bdc8cb017400d0842a89458f8077de3
+*** Element info: {Using=xpath, value=//select[@name='options[13878]'}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -86,8 +88,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy10.click(Unknown Source)
-at pages.HomePage.Clickonlink(HomePage.java:244)
-at tests.US.Signin(US.java:45)
+at pages.ProductMenu.productCheckout(ProductMenu.java:82)
+at tests.US.Checkout(US.java:62)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -110,10 +112,10 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signin -->
+        </test-method> <!-- Checkout -->
       </class> <!-- tests.US -->
     </test> <!-- US -->
   </suite> <!-- WA-US test suite -->

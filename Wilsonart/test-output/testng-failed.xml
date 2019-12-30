@@ -8,7 +8,7 @@
     <classes>
       <class name="tests.US">
         <methods>
-          <include name="Signin"/>
+          <include name="Checkout"/>
           <include name="SetupApplication"/>
         </methods>
       </class> <!-- tests.US -->

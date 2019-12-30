@@ -88,6 +88,7 @@ public void productCheckout() throws InterruptedException
 	s1.selectByIndex(0);
 	Thread.sleep(3000);
 	
+	selectProductSize.click();
 	Select s2=new Select(selectProductSize);
 	s2.selectByIndex(0);		
 	Thread.sleep(3000);
