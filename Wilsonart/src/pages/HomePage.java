@@ -12,6 +12,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import tests.TakeScreenShot;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.*;
@@ -234,8 +237,9 @@ public void entersearchkey(String Value)
 	SearchBox.sendKeys(Value);
 }
 
-public void Clickonsearchbutton()
+public void Clickonsearchbutton() throws Exception
 {
+	//TS = new TakeScreenShot();
 	SearchButton.click();
 }
 

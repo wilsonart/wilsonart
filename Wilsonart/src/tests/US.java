@@ -28,6 +28,7 @@ public class US extends BaseClass {
     
 	ProductMenu PM;
 	HomePage hp;
+	TakeScreenShot TS;
 	@Parameters({"browser","wilsonart"})
 	public US(String browsr, String URL) throws IOException
 	{
@@ -59,7 +60,9 @@ public class US extends BaseClass {
 		  hp.Clickonlink();
 		  hp.SignInToApplication(Common.fromProperties("Configuration", "username"),Common.fromProperties("Configuration", "password"),"");
 		  Thread.sleep(5000);
-		  PM.productCheckout();	  
+		  PM.productCheckout();	
+		  //TS.takeSnapShot(webdriver,fileWithPath);
+		  
 	  }
 	@Test
 	public void Find_Your_Surface() throws Throwable
@@ -75,9 +78,10 @@ public class US extends BaseClass {
 		}
 	
 		@Test
-	public void Quick_Search() throws Exception
+	public void Quick_Search(String fileWithPath, WebDriver webdriver) throws Exception
 	{
 		  hp = new HomePage(driver);
+		  TS = new TakeScreenShot();
 		  Thread.sleep(10000);
 		  System.out.println(Common.fromProperties("Configuration", "username"));
 		  System.out.println(Common.fromProperties("Configuration", "password"));
@@ -87,6 +91,7 @@ public class US extends BaseClass {
 		  hp.entersearchkey(Common.fromProperties("Configuration", "search_item"));
 		  Thread.sleep(10000);
 	      hp.Clickonsearchbutton();
+	      TS.takeSnapShot(webdriver,fileWithPath);
 	}
 	
 	@Test
