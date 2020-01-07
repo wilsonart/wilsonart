@@ -8,8 +8,8 @@
             <class name="tests.US">
             <methods>
             <exclude name = "New_Account_Registration" /> 
-            <include name = "Signin" />
-            <exclude name = "Checkout" />
+            <exclude name = "Signin" />
+            <include name = "Checkout" />
             <exclude name = "Shopping_Cart" />
             <exclude name = "Find_Your_Surface" />
             <exclude name = "Product_Listing" /> 
