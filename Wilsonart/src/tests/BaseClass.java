@@ -84,14 +84,14 @@ public class BaseClass {
 	  
 	  if(URL.equals("wilsonart"))
 	  //driver.get("https://www.wilsonart.com");
-	  driver.get("http://newdev.wilsonart.com");
+	  driver.get("http://test.wilsonart.com/");
 	  else if (URL.equals("polyrey"))
 	  driver.get("https://www.polyrey.com");  
 	  Reporter.log("=====Application has Started======", true);
 	  
 	  }
 
-/*  @AfterMethod
+ /* @AfterMethod
   public void CloseApplication() {
 	  
 	  driver.quit();

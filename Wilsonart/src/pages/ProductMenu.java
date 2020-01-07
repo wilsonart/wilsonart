@@ -35,30 +35,34 @@ WebElement ProductMainMenu;
 WebElement HLP_AllDesigns;
 
 @FindBy(xpath="//a[@class='action showcart']//span[@class='text'][contains(text(),'My Cart')]")
-WebElement MyCart;
+WebElement btn_MyCart;
   
 @FindBy(xpath="//span[contains(text(),'View Cart')]")
-WebElement ViewCart;
+WebElement btn_ViewCart;
 
 @FindBy(xpath="//td[@class='col item']//a[contains(text(),'ProductValue')]")
 WebElement ProductName;
 
-@FindBy(xpath="//a[@id='sample_order_1752']")
+@FindBy(xpath="//a[@id='sample_order_6146']")
 WebElement selectSampleProduct;
 
-@FindBy(xpath="//select[@name='options[13878]'")
+@FindBy(xpath="//div[@class='control']/select[@name='options[7145]']")
 WebElement selectProductType;
 
-@FindBy(xpath="//select[@id='Finish'")
+@FindBy(xpath="//select[@name='options[7144]']")
 WebElement selectProductFinish;
 
-@FindBy(xpath="//select[id='Size'")
-WebElement selectProductSize;
-
-@FindBy(xpath="//select[@id='qty'")
+@FindBy(xpath="//select[@id='qty_6146']")
 WebElement selectProductQuantity;
 
+@FindBy(xpath="//span[contains(text(),'Order')]")
+WebElement btn_Order;
 
+@FindBy(xpath="//button[@onclick='popupTrigger()']")
+WebElement btn_CheckOut;
+
+@FindBy(xpath="//button[@class='iwd_opc_button active iwd_opc_place_order_button']//span[contains(text(),'Place Order')]")
+WebElement btn_PlaceOrder;
 
 
 
@@ -71,35 +75,19 @@ public void productCheckout() throws InterruptedException
 	MouseOver.perform();
 	HLP_AllDesigns.click();
 	Thread.sleep(5000);
-	JavascriptExecutor js = (JavascriptExecutor) driver;
-	driver.manage().window().maximize();
-	js.executeScript("window.scrollBy(0,200)");
 	selectSampleProduct.click();
 	Thread.sleep(2000);
-	
-	
-	selectProductType.click();
 	Select s = new Select(selectProductType);
-	s.selectByIndex(0);
-	Thread.sleep(3000);
-	
-	selectProductFinish.click();
-	Select s1 = new Select(selectProductFinish);
-	s1.selectByIndex(0);
-	Thread.sleep(3000);
-	
-	selectProductSize.click();
-	Select s2=new Select(selectProductSize);
-	s2.selectByIndex(0);		
-	Thread.sleep(3000);
-	
-	selectProductQuantity.click();
-	Select s3 = new Select(selectProductQuantity);
-	s2.selectByIndex(1);	
+	s.selectByVisibleText("Standard Laminate");
+	Select s2 = new Select(selectProductQuantity);
+	s2.selectByVisibleText("2");
+	btn_Order.click();
+	Thread.sleep(5000);
+	btn_CheckOut.click();
+	Thread.sleep(10000);
+	btn_PlaceOrder.click();	
 	
 }
-
-
 
 
 public void MyCart() throws InterruptedException
@@ -109,8 +97,16 @@ public void MyCart() throws InterruptedException
 	MouseOver.perform();
 	HLP_AllDesigns.click();
 	Thread.sleep(5000);
-	MyCart.click();
-	ViewCart.click();
+	selectSampleProduct.click();
+	Thread.sleep(2000);
+	Select s = new Select(selectProductType);
+	s.selectByVisibleText("Standard Laminate");
+	Select s2 = new Select(selectProductQuantity);
+	s2.selectByVisibleText("2");
+	btn_Order.click();
+	Thread.sleep(2000);
+	btn_MyCart.click();
+	btn_ViewCart.click();
 	//ProductName.findElement(By.xpath(xpathExpression))
 }
 	
