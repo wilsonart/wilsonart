@@ -64,10 +64,6 @@ WebElement btn_CheckOut;
 @FindBy(xpath="//button[@class='iwd_opc_button active iwd_opc_place_order_button']//span[contains(text(),'Place Order')]")
 WebElement btn_PlaceOrder;
 
-
-
-
- 
 public void productCheckout() throws InterruptedException
 {
 	Actions act = new Actions(driver);
