@@ -4,11 +4,11 @@
   <parameter name="wilsonart" value="wilsonart"/>
   <parameter name="polyrey" value="polyrey"/>
   <parameter name="browser" value="chrome"/>
-  <test thread-count="1" name="US(failed)" parallel="tests">
+  <test name="US(failed)" parallel="tests">
     <classes>
       <class name="tests.US">
         <methods>
-          <include name="Signin"/>
+          <include name="Checkout"/>
           <include name="SetupApplication"/>
         </methods>
       </class> <!-- tests.US -->
